@@ -1,0 +1,226 @@
+/* Basic styles */
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #afdde5;
+  color: #003135;
+}
+
+header {
+  /* border: 2px solid black; */
+  background-color: #0fa4af;
+  height: 170px;
+  width: 1519px;
+  display: flex;
+  justify-content: center;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1px;
+}
+
+.d_logo {
+  border: 2px solid black;
+  height: 120px;
+  width: 120px;
+  margin: 15px auto;
+  background-image: url(/public/images/logo.png);
+}
+
+.d_header {
+  border: 2px solid black;
+  width: 1100px;
+  height: 120px;
+  margin: 15px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.d_login {
+  border: 2px solid black;
+  height: 120px;
+  width: 120px;
+  margin: 15px auto;
+  display: flex;
+  flex-direction: column; /* Arrange items in a column */
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Center the text */
+}
+
+.d_login img {
+  width: 50px; /* Adjust the size of the image */
+  height: 50px; /* Adjust the size of the image */
+  margin-bottom: 5px; /* Space between the image and text */
+}
+
+.d_login span {
+  text-decoration: none;
+  color: white;
+}
+
+.d_login :hover {
+  color: #003135;
+}
+
+.d_header h1 {
+  margin-bottom: 15px;
+}
+
+.d_header nav {
+  width: 1000px;
+  /* border: 2px solid black; */
+  height: 30px;
+  font-size: large;
+  padding-top: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: whitesmoke; /* Adjust link color */
+}
+
+nav a:hover {
+  color: #003135; /* Adjust link color on hover */
+  text-decoration: underline;
+}
+.d_header ul {
+  list-style: none;
+  display: flex; /* Make ul a flex container */
+  justify-content: space-evenly; /* Distribute li items evenly with space around them */
+}
+
+.d_header nav ul li {
+  display: inline;
+}
+
+.d_logo,
+.d_header,
+.d_login {
+  box-shadow: 15px 15px 5px black;
+}
+
+main {
+  /* border: 2px solid red; */
+  background-color: #0fa4af;
+  height: 60vh;
+  width: 1519px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1 , h3 {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1px;
+  text-decoration: underline;
+}
+
+main h1:hover {
+  color: black;
+}
+#services {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: auto auto auto; /* Three columns with equal width */
+  justify-content: center;
+  grid-gap: 20px; /* Optional: Add gap between grid items */
+}
+
+.service {
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #0fa4af;
+  border: 2px solid black;
+  box-shadow: 15px 15px 5px black;
+}
+
+.service h3 {
+  color:#003135 ;
+}
+.service h3:hover{
+  color: whitesmoke ;
+}
+
+.service p {
+  color:#003135 ;
+}
+
+footer{
+  /* border: 2px solid blue; */
+  height: 300px;
+  width: 1519px;
+  background-color: #0fa4af;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+footer .footer-content{
+  padding: 20px;
+  border: 2px solid black;
+  box-shadow: 15px 15px 5px black;
+  width: 1400px;
+}
+
+.footer-content p{
+  color: whitesmoke;
+
+}
+.footer-section-links , .footer-section-contact  h2{
+  text-decoration: underline;
+}
+
+.social-media a {
+  padding: 0px 10px;
+  text-decoration: none;
+  color: #003135;
+}
+
+.social-media a :hover{
+  color: whitesmoke;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 1515px) {
+  header {
+    height: auto;
+    width: auto;
+    /* border: 2px solid black; */
+    background-color: #0fa4af;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
+  }
+
+  @media only screen and (max-width: 1493px) {
+    #introduction {
+      width: 713px;
+      height: auto;
+    }
+
+    footer .footer-content {
+      width: 900px;
+      height: auto;
+    }
+  }
+}
